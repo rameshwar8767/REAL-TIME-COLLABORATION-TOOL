@@ -1,0 +1,21 @@
+@import url("tldraw/tldraw.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-scroll {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s ease;
+  }
+
+  @layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+         /* Firefox */
+  }
+  }
